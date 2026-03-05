@@ -1,0 +1,22 @@
+[
+  {
+    "school": "Stevens Institute of Technology",
+    "degree": "Master of Science in Computer Science",
+    "gpa": "3.88/4.0",
+    "location": "Hoboken, NJ",
+    "start": "January 2024",
+    "end": "December 2025",
+    "honors": ["Graduate Peer Mentor", "Provost Scholar", "Graduate Research Assistant (Natural Language Processing)", "Graduate Teaching Assistant (Natural Language Processing)"],
+    "coursework": ["Machine Learning", "Deep Learning", "Natural Language Processing", "Artificial Intelligence"]
+  },
+  {
+    "school": "JSS Science and Technology University",
+    "degree": "Bachelor of Engineering in Electronics and Communication",
+    "gpa": "3.56/4.0",
+    "location": "Mysuru, India",
+    "start": "August 2019",
+    "end": "August 2023",
+    "honors": ["IEEE SBMDC Vice Chair", "IEEE Student Activities Committee Coordinator","IEEE Student Branch Ambassador", "K-Tech Funding Recipient"],
+    "coursework": ["Data Structures & Algorithms", "Computer Networks", "Digital Signal Processing", "Cryptography"]
+  }
+]

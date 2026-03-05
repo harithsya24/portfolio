@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(gh api repos/harithsya24/Community_Risk_Monitor/readme --jq '.content' | base64 -d 2>/dev/null || gh api repos/harithsya24/Community_Risk_Monitor/contents/README.md --jq '.content' | base64 -d)",
+      "Bash(gh api repos/harithsya24/LexiGuide-Document-Analyser/readme --jq '.content' | base64 -d 2>/dev/null || gh api repos/harithsya24/LexiGuide-Document-Analyser/contents/README.md --jq '.content' | base64 -d)",
+      "WebFetch(domain:github.com)"
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "category": "Languages & Frameworks",
+    "icon": "fa-code",
+    "items": ["Python", "SQL", "C++", "R", "PyTorch", "TensorFlow", "Scikit-learn", "Transformers", "Hugging Face", "LangChain", "LlamaIndex", "FastAPI", "Flask"]
+  },
+  {
+    "category": "ML & AI",
+    "icon": "fa-brain",
+    "items": ["LLM Fine-tuning (LoRA, QLoRA, PEFT)", "RAG Systems", "Prompt Engineering", "Computer Vision", "CNNs", "GANs", "YOLO", "NLP", "Model Quantization", "Pruning", "Distillation", "A/B Testing"]
+  },
+  {
+    "category": "MLOps & Infrastructure",
+    "icon": "fa-server",
+    "items": ["Docker", "Kubernetes", "MLflow", "Weights & Biases", "DVC", "DagsHub", "TensorRT", "ONNX", "CI/CD", "GitHub Actions", "Jenkins", "Terraform"]
+  },
+  {
+    "category": "Cloud & Data",
+    "icon": "fa-cloud",
+    "items": ["AWS SageMaker", "AWS EC2", "AWS Lambda", "AWS S3", "GCP Vertex AI", "PostgreSQL", "MongoDB", "Redis", "Elasticsearch", "Pinecone", "FAISS"]
+  }
+]

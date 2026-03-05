@@ -1,0 +1,73 @@
+[
+  
+  {
+    "id": "1",
+    "company": "WalletGyde Inc.",
+    "department": "Research & Development",
+    "role": "Artificial Intelligence Researcher",
+    "location": "Remote",
+    "start": "January 2025",
+    "end": "Present",
+    "bullets": [
+      "Spearheaded alpha testing for the WalletGyde chatbot, establishing rigorous benchmarks for reasoning depth, grounded accuracy, and tool-calling reliability across diverse financial personas.",
+      "Architected feedback loops to drive measurable improvements in Retrieval-Augmented Generation (RAG) and system logic, reducing failure modes by identifying complex edge cases and behavioral patterns.",
+      "Orchestrated collaboration between Engineering and Data teams to align model behavior with financial compliance standards, ensuring high-integrity user experiences and beta-readiness."
+    ]
+  },
+  {
+    "id": "2",
+    "company": "Mount Sinai Health System",
+    "department": "Department of Radiology — BMEII Lab",
+    "role": "Volunteer AI Researcher",
+    "location": "New York, NY",
+    "start": "November 2025",
+    "end": "Present",
+    "bullets": [
+      "Built end-to-end NLP system fine-tuning transformer models (T5, BART, GPT-2) for code generation with custom PyTorch training pipelines",
+      "Engineered RAG architecture with vector embeddings and semantic search, achieving 23% accuracy improvement",
+      "Curating multi-modal datasets combining natural language, hardware configs, and sensor data for vision-language models"
+    ]
+  },
+  {
+    "id": "3",
+    "company": "Stevens Institute of Technology",
+    "department": "LEAF AI Lab",
+    "role": "Graduate Research Assistant",
+    "location": "Hoboken, NJ",
+    "start": "March 2025",
+    "end": "December 2025",
+    "bullets": [
+      "Benchmarked GPT-4, Qwen3, GLM-4.5, Grok-2 on 12,000+ clinical queries using MedESQ framework",
+      "Achieved 114% accuracy improvement (35% → 75%) via ReAct prompting and structured reasoning chain optimization",
+      "Developed evaluation methodologies for robust AI architectures in healthcare NoSQL systems"
+    ]
+  },
+  {
+    "id": "4",
+    "company": "PONS Tech",
+    "department": "",
+    "role": "AI Research Engineer Intern",
+    "location": "Newark, NJ",
+    "start": "June 2025",
+    "end": "October 2025",
+    "bullets": [
+      "Deployed production Pix2Pix GAN pipeline processing 28,000+ medical images achieving 18% SSIM improvement",
+      "Architected hybrid GAN with SPADE for organ segmentation achieving 92% Dice coefficient on breast CT scans",
+      "Reduced inference time 40% through TensorRT optimization and model compression"
+    ]
+  },
+  {
+    "id": "5",
+    "company": "FutureWave",
+    "department": "",
+    "role": "Software Engineer Intern",
+    "location": "Mysuru, India",
+    "start": "August 2021",
+    "end": "May 2022",
+    "bullets": [
+      "Built automated ML deployment pipelines serving 50,000+ users with Docker, Kubernetes, Terraform — 98% uptime",
+      "Reduced p99 latency 35% (450ms → 180ms) via model quantization, caching, and horizontal scaling on AWS",
+      "Implemented blue-green deployment strategies for zero-downtime releases"
+    ]
+  }
+]
