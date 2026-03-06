@@ -3,90 +3,165 @@
     "id": "1",
     "title": "Agentic Medical RAG System",
     "description": "Scalable multi-agent RAG system with hybrid search (dense + sparse embeddings) on 1.2M PubMed articles achieving 95% precision and 87% query latency reduction. Evaluated on MEDIQA and MedQA benchmarks.",
-    "tags": ["Python", "LangChain", "Pinecone", "FastAPI", "Redis"],
+    "tags": [
+      "Python",
+      "LangChain",
+      "Pinecone",
+      "FastAPI",
+      "Redis"
+    ],
     "github": "",
     "demo": "",
     "featured": true,
-    "date": "December2024"
+    "date": "December 2024",
+    "image": "assets/images/projects/project-01.svg"
   },
   {
     "id": "2",
     "title": "AutoSec AI: Cloud Security Orchestration",
     "description": "Multi-agent framework integrating RAG with MITRE ATT&CK taxonomy for automated threat analysis. Processes 2M+ security events/day with 93% precision and 95.5% accuracy in risk classification.",
-    "tags": ["Python", "LangGraph", "Elasticsearch", "FastAPI", "MITRE ATT&CK"],
+    "tags": [
+      "Python",
+      "LangGraph",
+      "Elasticsearch",
+      "FastAPI",
+      "MITRE ATT&CK"
+    ],
     "github": "https://github.com/harithsya24/autosec-ai",
     "demo": "",
     "featured": true,
-    "date": "December 2025"
+    "date": "December 2025",
+    "image": "assets/images/projects/project-02.svg"
   },
   {
     "id": "3",
     "title": "Electronics Component Detection",
     "description": "End-to-end MLOps pipeline detecting 61 types of electronic components (resistors, capacitors, sensors, Arduino boards) from images. Powered by YOLOv5s, served via Flask, containerized with Docker, automated through GitHub Actions CI/CD.",
-    "tags": ["Python", "YOLOv5", "Flask", "Docker", "GitHub Actions", "Computer Vision"],
+    "tags": [
+      "Python",
+      "YOLOv5",
+      "Flask",
+      "Docker",
+      "GitHub Actions",
+      "Computer Vision"
+    ],
     "github": "https://github.com/harithsya24/Components_Identification_system",
     "demo": "",
     "featured": true,
-    "date": "February 2026"
+    "date": "February 2026",
+    "image": "assets/images/projects/project-03.svg"
   },
   {
     "id": "4",
     "title": "Kidney Tumor Identification System",
     "description": "Deep learning application for early detection of kidney tumors from CT scans using fine-tuned VGG16. Full MLOps pipeline with DVC reproducibility, MLflow + DagsHub experiment tracking, and AWS deployment via Docker and ECR.",
-    "tags": ["Python", "TensorFlow", "Flask", "DVC", "MLflow", "AWS", "Docker"],
+    "tags": [
+      "Python",
+      "TensorFlow",
+      "Flask",
+      "DVC",
+      "MLflow",
+      "AWS",
+      "Docker"
+    ],
     "github": "https://github.com/harithsya24/Kidney_Tumor_Identification_System",
     "demo": "",
     "featured": true,
-    "date": "February 2026"
+    "date": "February 2026",
+    "image": "assets/images/projects/project-04.svg"
   },
   {
     "id": "5",
     "title": "Smart Attendance Portal",
     "description": "Role-based classroom attendance system with Admin and Student panels. Features analytics with date-wise pivot matrices, CSV exports with GitHub auto-commits, and real-time Supabase backend with structured logging.",
-    "tags": ["Python", "Streamlit", "Supabase", "Pandas", "GitHub API"],
+    "tags": [
+      "Python",
+      "Streamlit",
+      "Supabase",
+      "Pandas",
+      "GitHub API"
+    ],
     "github": "https://github.com/harithsya24/Smart-Attendance-Portal-with-Supabase",
     "demo": "",
     "featured": false,
-    "date": "January 2024"
+    "date": "January 2024",
+    "image": "assets/images/projects/project-05.svg"
   },
   {
     "id": "6",
     "title": "FAANG AI Stock Analysis Dashboard",
     "description": "Web app leveraging ARIMA-LSTM hybrid forecasting to predict stock performance for Meta, Apple, Amazon, Netflix, and Google. Combines real-time stock data, financial news sentiment via VADER, and CrewAI-powered investment recommendations.",
-    "tags": ["Python", "Streamlit", "TensorFlow", "ARIMA", "LSTM", "CrewAI", "Plotly"],
+    "tags": [
+      "Python",
+      "Streamlit",
+      "TensorFlow",
+      "ARIMA",
+      "LSTM",
+      "CrewAI",
+      "Plotly"
+    ],
     "github": "https://github.com/harithsya24/FAANG-AI-Stock-Analysis-Dashboard",
     "demo": "",
     "featured": true,
-    "date": "May 2025"
+    "date": "May 2025",
+    "image": "assets/images/projects/project-06.svg"
   },
   {
     "id": "7",
     "title": "CloudMart: Multi-Cloud AI E-Commerce Platform",
     "description": "Scalable e-commerce platform on AWS (EKS, DynamoDB, S3, Bedrock, Lambda), integrated with GCP BigQuery for real-time analytics and Azure AI for sentiment analysis. Infrastructure managed with Terraform, CI/CD via AWS CodePipeline.",
-    "tags": ["AWS", "Kubernetes", "Terraform", "React", "Docker", "GCP", "Azure", "DynamoDB"],
+    "tags": [
+      "AWS",
+      "Kubernetes",
+      "Terraform",
+      "React",
+      "Docker",
+      "GCP",
+      "Azure",
+      "DynamoDB"
+    ],
     "github": "https://github.com/harithsya24/cloud-mart",
     "demo": "",
     "featured": true,
-    "date": "January 2025"
+    "date": "January 2025",
+    "image": "assets/images/projects/project-07.svg"
   },
   {
     "id": "10",
     "title": "Community Risk Monitor",
     "description": "Real-time community safety platform monitoring fire incidents, crime statistics, weather alerts, traffic, air quality, and disaster alerts based on user location. Features a voice-activated interface ('Hey Attila'), interactive maps, and a CrewAI multi-agent architecture integrating Pirate Weather, TomTom, News, and Crime Data APIs.",
-    "tags": ["React", "TypeScript", "Node.js", "CrewAI", "Leaflet", "Google Maps", "Tailwind CSS"],
+    "tags": [
+      "React",
+      "TypeScript",
+      "Node.js",
+      "CrewAI",
+      "Leaflet",
+      "Google Maps",
+      "Tailwind CSS"
+    ],
     "github": "https://github.com/harithsya24/Community_Risk_Monitor",
     "demo": "",
     "featured": true,
-    "date": "Quack-Hacks Winner: March 2025"
+    "date": "Quack-Hacks Winner: March 2025",
+    "image": "assets/images/projects/project-08.svg"
   },
   {
     "id": "11",
     "title": "LexiGuide: Legal Document Analyser",
     "description": "AI-powered legal document analysis tool supporting PDF and image uploads via OCR. Provides document summaries, key point extraction, legal terminology explanations, interactive Q&A using RAG, a searchable legal dictionary, and an AI chat assistant — all built with a privacy-first local processing approach.",
-    "tags": ["Python", "Streamlit", "OpenAI", "RAG", "PyPDF2", "OCR", "LLM"],
+    "tags": [
+      "Python",
+      "Streamlit",
+      "OpenAI",
+      "RAG",
+      "PyPDF2",
+      "OCR",
+      "LLM"
+    ],
     "github": "https://github.com/harithsya24/LexiGuide-Document-Analyser",
     "demo": "",
     "featured": true,
-    "date": "April 2025"
+    "date": "April 2025",
+    "image": "assets/images/projects/project-09.svg"
   }
 ]

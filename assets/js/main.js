@@ -205,8 +205,8 @@ async function renderExperience() {
   const data = await fetch('./data/experience.json').then(r => r.json());
 
   const html = data.map((exp, i) => {
-    const pos  = i % 2 === 0 ? 'above' : 'below';
-    const num  = String(i + 1).padStart(2, '0');
+    const pos = i % 2 === 0 ? 'above' : 'below';
+    const num = String(i + 1).padStart(2, '0');
     const dept = exp.department
       ? `<span class="text-slate-500 font-normal"> · ${exp.department}</span>`
       : '';
@@ -237,15 +237,15 @@ async function renderExperience() {
 
   // Arrow navigation
   const scrollEl = document.getElementById('exp-scroll');
-  const prevBtn  = document.getElementById('exp-prev');
-  const nextBtn  = document.getElementById('exp-next');
-  const hint     = document.getElementById('exp-scroll-hint');
-  const STEP     = 360;
+  const prevBtn = document.getElementById('exp-prev');
+  const nextBtn = document.getElementById('exp-next');
+  const hint = document.getElementById('exp-scroll-hint');
+  const STEP = 360;
 
   function updateArrows() {
     if (!scrollEl) return;
     const atStart = scrollEl.scrollLeft <= 10;
-    const atEnd   = scrollEl.scrollLeft + scrollEl.clientWidth >= scrollEl.scrollWidth - 10;
+    const atEnd = scrollEl.scrollLeft + scrollEl.clientWidth >= scrollEl.scrollWidth - 10;
     prevBtn?.classList.toggle('opacity-0', atStart);
     prevBtn?.classList.toggle('pointer-events-none', atStart);
     nextBtn?.classList.toggle('opacity-0', atEnd);
@@ -253,7 +253,7 @@ async function renderExperience() {
   }
 
   prevBtn?.addEventListener('click', () => scrollEl.scrollBy({ left: -STEP, behavior: 'smooth' }));
-  nextBtn?.addEventListener('click', () => scrollEl.scrollBy({ left:  STEP, behavior: 'smooth' }));
+  nextBtn?.addEventListener('click', () => scrollEl.scrollBy({ left: STEP, behavior: 'smooth' }));
 
   if (scrollEl) {
     scrollEl.addEventListener('scroll', () => {
@@ -269,7 +269,7 @@ async function renderExperience() {
       scrollStart = scrollEl.scrollLeft;
     });
     scrollEl.addEventListener('mouseleave', () => { isDown = false; });
-    scrollEl.addEventListener('mouseup',    () => { isDown = false; });
+    scrollEl.addEventListener('mouseup', () => { isDown = false; });
     scrollEl.addEventListener('mousemove', e => {
       if (!isDown) return;
       e.preventDefault();
@@ -314,7 +314,7 @@ async function renderProjects() {
          data-tags='${JSON.stringify(p.tags)}'
          data-aos="fade-up" data-aos-delay="${i * 80}">
       <div class="flex items-start justify-between gap-3 mb-3">
-        <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-cyan-500/20 to-violet-500/20 flex items-center justify-center flex-shrink-0">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-orange-500/20 to-amber-500/20 flex items-center justify-center flex-shrink-0">
           <i class="fas fa-cube text-[#00d4ff] text-sm"></i>
         </div>
         ${p.featured ? `<span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-cyan-500/10 text-[#00d4ff] border border-cyan-500/20">Featured</span>` : ''}
@@ -386,78 +386,6 @@ async function renderPublications() {
   }).join('');
 }
 
-/* ===== CONTACT FORM (iMessage chat interface) ===== */
-function initContactForm() {
-  const chatBody   = document.getElementById('chat-body');
-  const chatInput  = document.getElementById('chat-input');
-  const sendBtn    = document.getElementById('chat-send-btn');
-  const typingEl   = document.getElementById('typing-indicator');
-  const phoneFrame = document.getElementById('phone-frame');
-  const form       = document.getElementById('contact-form');
-  const hiddenMsg  = document.getElementById('hidden-message');
-
-  if (!chatBody) return;
-
-  // Stagger-animate pre-filled bubbles when phone scrolls into view
-  if (phoneFrame) {
-    const obs = new IntersectionObserver(entries => {
-      if (!entries[0].isIntersecting) return;
-      obs.unobserve(phoneFrame);
-      chatBody.querySelectorAll('.chat-msg[data-delay]').forEach(msg => {
-        const delay = parseInt(msg.dataset.delay, 10) || 0;
-        setTimeout(() => msg.classList.add('chat-visible'), delay);
-      });
-    }, { threshold: 0.25 });
-    obs.observe(phoneFrame);
-  }
-
-  if (!chatInput || !sendBtn) return;
-
-  function scrollBottom() {
-    chatBody.scrollTop = chatBody.scrollHeight;
-  }
-
-  function appendBubble(text, side) {
-    const time = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
-    const div  = document.createElement('div');
-    div.className = `chat-msg ${side}`;
-    div.innerHTML = `<div class="bubble">${text}</div><span class="msg-time">${time}</span>`;
-    chatBody.insertBefore(div, typingEl);
-    requestAnimationFrame(() => div.classList.add('chat-visible'));
-    scrollBottom();
-  }
-
-  async function sendMessage() {
-    const text = chatInput.value.trim();
-    if (!text) return;
-    chatInput.value = '';
-    sendBtn.disabled = true;
-
-    appendBubble(text, 'them');
-
-    if (typingEl) { typingEl.style.display = 'flex'; scrollBottom(); }
-
-    // Silent Formspree POST — no toast, no error shown
-    if (form && hiddenMsg) {
-      hiddenMsg.value = text;
-      fetch(form.action, {
-        method: 'POST',
-        body: new FormData(form),
-        headers: { Accept: 'application/json' },
-      }).catch(() => {});
-    }
-
-    await new Promise(r => setTimeout(r, 2000));
-    if (typingEl) typingEl.style.display = 'none';
-    appendBubble("Thanks for your message! I'll get back to you soon 🚀", 'me');
-    sendBtn.disabled = false;
-  }
-
-  sendBtn.addEventListener('click', sendMessage);
-  chatInput.addEventListener('keydown', e => {
-    if (e.key === 'Enter') { e.preventDefault(); sendMessage(); }
-  });
-}
 
 /* ===== FOOTER YEAR ===== */
 function initFooter() {
@@ -472,7 +400,6 @@ document.addEventListener('DOMContentLoaded', async () => {
   initMobileMenu();
   initTypewriter();
   initBackToTop();
-  initContactForm();
   initFooter();
   renderCertifications();
 

@@ -15,23 +15,23 @@
   const mobile = window.innerWidth < 768;
 
   const CFG = {
-    nodeCount:   mobile ? 55  : 110,
+    nodeCount: mobile ? 55 : 110,
     connectDist: mobile ? 2.4 : 2.9,
-    maxEdges:    mobile ? 110 : 220,
-    pulseCount:  mobile ? 4   : 9,
-    camZ:        8,
-    bounds:      { x: 9, y: 5.5, z: 2.5 },
-    nodeSize:    mobile ? 0.055 : 0.065,
-    pulseSize:   0.14,
+    maxEdges: mobile ? 110 : 220,
+    pulseCount: mobile ? 4 : 9,
+    camZ: 8,
+    bounds: { x: 9, y: 5.5, z: 2.5 },
+    nodeSize: mobile ? 0.055 : 0.065,
+    pulseSize: 0.14,
     // [r,g,b] 0–1
-    cyan:   [0.000, 0.831, 1.000],   // #00d4ff
-    violet: [0.659, 0.333, 0.969],   // #a855f7
+    cyan: [0.0, 0.83, 1.0],      // #00d4ff
+    violet: [0.66, 0.33, 0.97],  // #a855f7
   };
 
   // ── Three.js setup ────────────────────────────────────────────────────────
-  const scene    = new THREE.Scene();
+  const scene = new THREE.Scene();
   const renderer = new THREE.WebGLRenderer({ canvas, alpha: true, antialias: false });
-  const camera   = new THREE.PerspectiveCamera(55, 1, 0.1, 100);
+  const camera = new THREE.PerspectiveCamera(55, 1, 0.1, 100);
   camera.position.z = CFG.camZ;
   renderer.setPixelRatio(Math.min(window.devicePixelRatio, 1.5));
   fitRenderer();
@@ -59,23 +59,23 @@
 
   for (let i = 0; i < N; i++) {
     const c = isViolet[i] ? CFG.violet : CFG.cyan;
-    nodeColBuf[i * 3]     = c[0];
+    nodeColBuf[i * 3] = c[0];
     nodeColBuf[i * 3 + 1] = c[1];
     nodeColBuf[i * 3 + 2] = c[2];
   }
 
   const nodesGeo = new THREE.BufferGeometry();
   nodesGeo.setAttribute('position', new THREE.BufferAttribute(nodePosBuf, 3));
-  nodesGeo.setAttribute('color',    new THREE.BufferAttribute(nodeColBuf, 3));
+  nodesGeo.setAttribute('color', new THREE.BufferAttribute(nodeColBuf, 3));
 
   scene.add(new THREE.Points(nodesGeo, new THREE.PointsMaterial({
-    size:            CFG.nodeSize,
-    vertexColors:    true,
-    transparent:     true,
-    opacity:         0.88,
+    size: CFG.nodeSize,
+    vertexColors: true,
+    transparent: true,
+    opacity: 0.88,
     sizeAttenuation: true,
-    blending:        THREE.AdditiveBlending,
-    depthWrite:      false,
+    blending: THREE.AdditiveBlending,
+    depthWrite: false,
   })));
 
   // ── LineSegments geometry (edges) ─────────────────────────────────────────
@@ -85,15 +85,15 @@
 
   const edgeGeo = new THREE.BufferGeometry();
   edgeGeo.setAttribute('position', new THREE.BufferAttribute(edgePosBuf, 3));
-  edgeGeo.setAttribute('color',    new THREE.BufferAttribute(edgeColBuf, 3));
+  edgeGeo.setAttribute('color', new THREE.BufferAttribute(edgeColBuf, 3));
   edgeGeo.setDrawRange(0, 0);
 
   scene.add(new THREE.LineSegments(edgeGeo, new THREE.LineBasicMaterial({
     vertexColors: true,
-    transparent:  true,
-    opacity:      0.55,
-    blending:     THREE.AdditiveBlending,
-    depthWrite:   false,
+    transparent: true,
+    opacity: 0.55,
+    blending: THREE.AdditiveBlending,
+    depthWrite: false,
   })));
 
   // ── Signal pulses ─────────────────────────────────────────────────────────
@@ -103,19 +103,19 @@
   pulseGeo.setAttribute('position', new THREE.BufferAttribute(pulseBuf, 3));
 
   scene.add(new THREE.Points(pulseGeo, new THREE.PointsMaterial({
-    size:            CFG.pulseSize,
-    color:           0xffffff,
-    transparent:     true,
-    opacity:         0.92,
+    size: CFG.pulseSize,
+    color: 0xffffff,
+    transparent: true,
+    opacity: 0.92,
     sizeAttenuation: true,
-    blending:        THREE.AdditiveBlending,
-    depthWrite:      false,
+    blending: THREE.AdditiveBlending,
+    depthWrite: false,
   })));
 
   const pulses = Array.from({ length: P }, () => ({
-    from:  Math.floor(Math.random() * N),
-    to:    Math.floor(Math.random() * N),
-    t:     Math.random(),
+    from: Math.floor(Math.random() * N),
+    to: Math.floor(Math.random() * N),
+    t: Math.random(),
     speed: 0.006 + Math.random() * 0.009,
   }));
 
@@ -136,7 +136,7 @@
   // ── Mouse parallax ────────────────────────────────────────────────────────
   let mxT = 0, myT = 0, camX = 0, camY = 0;
   window.addEventListener('mousemove', e => {
-    mxT = (e.clientX / window.innerWidth  - 0.5) * 2;
+    mxT = (e.clientX / window.innerWidth - 0.5) * 2;
     myT = (e.clientY / window.innerHeight - 0.5) * 2;
   }, { passive: true });
 
@@ -151,10 +151,10 @@
     // Update node positions
     for (let i = 0; i < N; i++) {
       px[i] += vx[i]; py[i] += vy[i]; pz[i] += vz[i];
-      if (px[i] >  CFG.bounds.x || px[i] < -CFG.bounds.x) vx[i] *= -1;
-      if (py[i] >  CFG.bounds.y || py[i] < -CFG.bounds.y) vy[i] *= -1;
-      if (pz[i] >  CFG.bounds.z || pz[i] < -CFG.bounds.z) vz[i] *= -1;
-      nodePosBuf[i * 3]     = px[i];
+      if (px[i] > CFG.bounds.x || px[i] < -CFG.bounds.x) vx[i] *= -1;
+      if (py[i] > CFG.bounds.y || py[i] < -CFG.bounds.y) vy[i] *= -1;
+      if (pz[i] > CFG.bounds.z || pz[i] < -CFG.bounds.z) vz[i] *= -1;
+      nodePosBuf[i * 3] = px[i];
       nodePosBuf[i * 3 + 1] = py[i];
       nodePosBuf[i * 3 + 2] = pz[i];
     }
@@ -168,20 +168,20 @@
         const dx = px[i] - px[j], dy = py[i] - py[j], dz = pz[i] - pz[j];
         const d2 = dx * dx + dy * dy + dz * dz;
         if (d2 < CD2) {
-          const a  = 1 - Math.sqrt(d2) / CD;
+          const a = 1 - Math.sqrt(d2) / CD;
           const ci = isViolet[i] ? vi : cy;
           const cj = isViolet[j] ? vi : cy;
-          const b  = e * 6;
-          edgePosBuf[b]     = px[i]; edgePosBuf[b + 1] = py[i]; edgePosBuf[b + 2] = pz[i];
+          const b = e * 6;
+          edgePosBuf[b] = px[i]; edgePosBuf[b + 1] = py[i]; edgePosBuf[b + 2] = pz[i];
           edgePosBuf[b + 3] = px[j]; edgePosBuf[b + 4] = py[j]; edgePosBuf[b + 5] = pz[j];
-          edgeColBuf[b]     = ci[0] * a; edgeColBuf[b + 1] = ci[1] * a; edgeColBuf[b + 2] = ci[2] * a;
+          edgeColBuf[b] = ci[0] * a; edgeColBuf[b + 1] = ci[1] * a; edgeColBuf[b + 2] = ci[2] * a;
           edgeColBuf[b + 3] = cj[0] * a; edgeColBuf[b + 4] = cj[1] * a; edgeColBuf[b + 5] = cj[2] * a;
           e++;
         }
       }
     }
     edgeGeo.attributes.position.needsUpdate = true;
-    edgeGeo.attributes.color.needsUpdate    = true;
+    edgeGeo.attributes.color.needsUpdate = true;
     edgeGeo.setDrawRange(0, e * 2);
 
     // Update pulses
@@ -189,13 +189,13 @@
       const pd = pulses[p];
       pd.t += pd.speed;
       if (pd.t >= 1) {
-        pd.t     = 0;
-        pd.from  = pd.to;
-        pd.to    = pickNearby(pd.from);
+        pd.t = 0;
+        pd.from = pd.to;
+        pd.to = pickNearby(pd.from);
         pd.speed = 0.006 + Math.random() * 0.009;
       }
       const t = pd.t, f = pd.from, to = pd.to;
-      pulseBuf[p * 3]     = px[f] + (px[to] - px[f]) * t;
+      pulseBuf[p * 3] = px[f] + (px[to] - px[f]) * t;
       pulseBuf[p * 3 + 1] = py[f] + (py[to] - py[f]) * t;
       pulseBuf[p * 3 + 2] = pz[f] + (pz[to] - pz[f]) * t;
     }

@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en" class="dark scroll-smooth">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- Primary Meta -->
   <title>Amrutha Kanakatte Ravishankar — AI Engineer</title>
-  <meta name="description" content="AI Engineer specializing in LLM fine-tuning, computer vision, and production ML systems. Published researcher. MS Computer Science, Stevens Institute of Technology." />
-  <meta name="keywords" content="AI Engineer, Machine Learning, LLM Fine-tuning, Computer Vision, NLP, RAG, PyTorch, Python, Deep Learning" />
+  <meta name="description"
+    content="AI Engineer specializing in LLM fine-tuning, computer vision, and production ML systems. Published researcher. MS Computer Science, Stevens Institute of Technology." />
+  <meta name="keywords"
+    content="AI Engineer, Machine Learning, LLM Fine-tuning, Computer Vision, NLP, RAG, PyTorch, Python, Deep Learning" />
   <meta name="author" content="Amrutha Kanakatte Ravishankar" />
   <meta name="robots" content="index, follow" />
 
@@ -15,13 +18,15 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://harithsya24.github.io/profile/" />
   <meta property="og:title" content="Amrutha Kanakatte Ravishankar — AI Engineer" />
-  <meta property="og:description" content="AI Engineer specializing in LLM fine-tuning, computer vision, and production ML systems." />
+  <meta property="og:description"
+    content="AI Engineer specializing in LLM fine-tuning, computer vision, and production ML systems." />
   <meta property="og:image" content="./assets/images/profile.jpg" />
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Amrutha Kanakatte Ravishankar — AI Engineer" />
-  <meta name="twitter:description" content="AI Engineer specializing in LLM fine-tuning, computer vision, and production ML systems." />
+  <meta name="twitter:description"
+    content="AI Engineer specializing in LLM fine-tuning, computer vision, and production ML systems." />
   <meta name="twitter:image" content="./assets/images/profile.jpg" />
 
   <!-- Canonical -->
@@ -34,12 +39,14 @@
   <link rel="preconnect" href="https://cdn.jsdelivr.net" />
 
   <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Syne:wght@400;600;700;800&display=swap"
+    rel="stylesheet" />
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <!-- AOS -->
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
@@ -52,7 +59,7 @@
       theme: {
         extend: {
           fontFamily: {
-            sans:    ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+            sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
             display: ['Syne', 'ui-sans-serif', 'sans-serif'],
           },
         },
@@ -78,10 +85,11 @@
   In dark mode: canvas + semi-transparent section backgrounds do the visual work.
   In light mode: CSS hides the canvas and resets to a flat white palette.
 -->
-<body class="bg-[#050a14] text-slate-200 font-sans antialiased">
 
-  <!-- ─── NEURAL NETWORK CANVAS (fixed, z-0, behind everything) ─────────── -->
-  <canvas id="neural-canvas" aria-hidden="true"></canvas>
+<body class="bg-[#050a14] text-[#ffffff] font-sans antialiased">
+
+  <!-- Background color -->
+  <div class="fixed inset-0 bg-[#050a14] -z-10" aria-hidden="true"></div>
 
 
   <!-- ===================================================
@@ -92,37 +100,46 @@
       <div class="flex items-center justify-between h-16">
 
         <!-- Logo -->
-        <a href="#hero" class="font-display font-bold text-xl tracking-wide text-[#00d4ff] hover:text-white transition-colors">
+        <a href="#hero"
+          class="font-display font-bold text-xl tracking-wide text-[#00d4ff] hover:text-white transition-colors">
           AKR
         </a>
 
         <!-- Desktop nav links -->
         <div class="hidden md:flex items-center space-x-7" role="list">
-          <a href="#about"        class="nav-link text-sm font-medium text-slate-400 hover:text-[#00d4ff] transition-colors" role="listitem">About</a>
-          <a href="#skills"       class="nav-link text-sm font-medium text-slate-400 hover:text-[#00d4ff] transition-colors" role="listitem">Skills</a>
-          <a href="#experience"   class="nav-link text-sm font-medium text-slate-400 hover:text-[#00d4ff] transition-colors" role="listitem">Experience</a>
-          <a href="#projects"     class="nav-link text-sm font-medium text-slate-400 hover:text-[#00d4ff] transition-colors" role="listitem">Projects</a>
-          <a href="#publications" class="nav-link text-sm font-medium text-slate-400 hover:text-[#00d4ff] transition-colors" role="listitem">Publications</a>
-          <a href="#contact"      class="nav-link text-sm font-medium text-slate-400 hover:text-[#00d4ff] transition-colors" role="listitem">Contact</a>
+          <a href="#about" class="nav-link text-sm font-medium text-[#94a3b8] hover:text-[#00d4ff] transition-colors"
+            role="listitem">About</a>
+          <a href="#skills" class="nav-link text-sm font-medium text-[#94a3b8] hover:text-[#00d4ff] transition-colors"
+            role="listitem">Skills</a>
+          <a href="#experience"
+            class="nav-link text-sm font-medium text-[#94a3b8] hover:text-[#00d4ff] transition-colors"
+            role="listitem">Experience</a>
+          <a href="#publications"
+            class="nav-link text-sm font-medium text-[#94a3b8] hover:text-[#00d4ff] transition-colors"
+            role="listitem">Publications</a>
+          <a href="#projects" class="nav-link text-sm font-medium text-[#94a3b8] hover:text-[#00d4ff] transition-colors"
+            role="listitem">Projects</a>
+          <a href="#contact" class="nav-link text-sm font-medium text-[#94a3b8] hover:text-[#00d4ff] transition-colors"
+            role="listitem">Contact</a>
         </div>
 
         <!-- Controls -->
         <div class="flex items-center gap-2">
           <button id="theme-toggle" aria-label="Toggle dark/light mode"
-                  class="p-2 rounded-lg text-slate-500 hover:text-[#00d4ff] hover:bg-white/5 transition-all">
-            <i class="fas fa-sun  hidden" id="icon-sun"  aria-hidden="true"></i>
-            <i class="fas fa-moon"         id="icon-moon" aria-hidden="true"></i>
+            class="p-2 rounded-lg text-slate-500 hover:text-[#00d4ff] hover:bg-white/5 transition-all">
+            <i class="fas fa-sun  hidden" id="icon-sun" aria-hidden="true"></i>
+            <i class="fas fa-moon" id="icon-moon" aria-hidden="true"></i>
           </button>
 
           <a href="./resume.pdf" download aria-label="Download resume"
-             class="btn-primary hidden sm:inline-flex items-center gap-1.5 px-4 py-2 text-sm text-white">
+            class="btn-primary hidden sm:inline-flex items-center gap-1.5 px-4 py-2 text-sm text-white">
             <i class="fas fa-download text-xs" aria-hidden="true"></i>
             Resume
           </a>
 
           <button id="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false"
-                  class="md:hidden p-2 rounded-lg text-slate-500 hover:text-[#00d4ff] hover:bg-white/5 transition-all">
-            <i class="fas fa-bars"  id="icon-bars"  aria-hidden="true"></i>
+            class="md:hidden p-2 rounded-lg text-slate-500 hover:text-[#00d4ff] hover:bg-white/5 transition-all">
+            <i class="fas fa-bars" id="icon-bars" aria-hidden="true"></i>
             <i class="fas fa-xmark hidden" id="icon-times" aria-hidden="true"></i>
           </button>
         </div>
@@ -132,15 +149,27 @@
     <!-- Mobile menu -->
     <div id="mobile-menu" class="hidden md:hidden glass-card border-t border-[rgba(0,212,255,0.08)]" role="menu">
       <div class="px-5 py-4 space-y-1">
-        <a href="#about"        class="mobile-nav-link block px-3 py-2.5 text-sm font-medium text-slate-400 hover:text-[#00d4ff] hover:bg-white/5 rounded-lg transition-colors" role="menuitem">About</a>
-        <a href="#skills"       class="mobile-nav-link block px-3 py-2.5 text-sm font-medium text-slate-400 hover:text-[#00d4ff] hover:bg-white/5 rounded-lg transition-colors" role="menuitem">Skills</a>
-        <a href="#experience"   class="mobile-nav-link block px-3 py-2.5 text-sm font-medium text-slate-400 hover:text-[#00d4ff] hover:bg-white/5 rounded-lg transition-colors" role="menuitem">Experience</a>
-        <a href="#projects"     class="mobile-nav-link block px-3 py-2.5 text-sm font-medium text-slate-400 hover:text-[#00d4ff] hover:bg-white/5 rounded-lg transition-colors" role="menuitem">Projects</a>
-        <a href="#publications" class="mobile-nav-link block px-3 py-2.5 text-sm font-medium text-slate-400 hover:text-[#00d4ff] hover:bg-white/5 rounded-lg transition-colors" role="menuitem">Publications</a>
-        <a href="#contact"      class="mobile-nav-link block px-3 py-2.5 text-sm font-medium text-slate-400 hover:text-[#00d4ff] hover:bg-white/5 rounded-lg transition-colors" role="menuitem">Contact</a>
+        <a href="#about"
+          class="mobile-nav-link block px-3 py-2.5 text-sm font-medium text-slate-400 hover:text-[#00d4ff] hover:bg-white/5 rounded-lg transition-colors"
+          role="menuitem">About</a>
+        <a href="#skills"
+          class="mobile-nav-link block px-3 py-2.5 text-sm font-medium text-slate-400 hover:text-[#00d4ff] hover:bg-white/5 rounded-lg transition-colors"
+          role="menuitem">Skills</a>
+        <a href="#experience"
+          class="mobile-nav-link block px-3 py-2.5 text-sm font-medium text-slate-400 hover:text-[#00d4ff] hover:bg-white/5 rounded-lg transition-colors"
+          role="menuitem">Experience</a>
+        <a href="#publications"
+          class="mobile-nav-link block px-3 py-2.5 text-sm font-medium text-slate-400 hover:text-[#00d4ff] hover:bg-white/5 rounded-lg transition-colors"
+          role="menuitem">Publications</a>
+        <a href="#projects"
+          class="mobile-nav-link block px-3 py-2.5 text-sm font-medium text-slate-400 hover:text-[#00d4ff] hover:bg-white/5 rounded-lg transition-colors"
+          role="menuitem">Projects</a>
+        <a href="#contact"
+          class="mobile-nav-link block px-3 py-2.5 text-sm font-medium text-slate-400 hover:text-[#00d4ff] hover:bg-white/5 rounded-lg transition-colors"
+          role="menuitem">Contact</a>
         <div class="pt-2 pb-1">
           <a href="./resume.pdf" download
-             class="btn-primary inline-flex items-center gap-1.5 px-4 py-2.5 text-sm text-white w-full justify-center">
+            class="btn-primary inline-flex items-center gap-1.5 px-4 py-2.5 text-sm text-white w-full justify-center">
             <i class="fas fa-download text-xs" aria-hidden="true"></i>Download Resume
           </a>
         </div>
@@ -150,131 +179,159 @@
 
 
   <!-- ===================================================
-       HERO  (transparent — canvas shows fully)
+       SCROLLYTELLING CANVAS SEQUENCE
   =================================================== -->
-  <section id="hero" class="min-h-screen flex items-center justify-center overflow-hidden pt-16" aria-label="Introduction">
-    <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-24 text-center">
+  <section id="scrolly-container" class="relative bg-[#0a0a0f]" style="height: 500vh;">
+    <div class="sticky top-0 w-full h-screen overflow-hidden flex items-center justify-center">
+      <!-- The Canvas -->
+      <canvas id="scrolly-canvas" class="absolute inset-0 z-0 opacity-80"
+        aria-label="Interactive neural sequence animation"></canvas>
 
-      <!-- Greeting -->
-      <p class="text-[#00d4ff] font-semibold mb-4 tracking-[0.22em] uppercase text-xs sm:text-sm"
-         data-aos="fade-down" data-aos-delay="100">
-        Hello, I'm
-      </p>
+      <!-- Overlays -->
+      <div class="relative z-10 w-full max-w-7xl mx-auto h-full pointer-events-none">
 
-      <!-- Name -->
-      <h1 class="font-display text-4xl sm:text-5xl lg:text-7xl font-bold text-white leading-tight mb-4 glow-text"
-          data-aos="fade-up" data-aos-delay="150">
-        Amrutha Kanakatte<br />
-        <span class="gradient-text">Ravishankar</span>
-      </h1>
+        <!-- 0-20%: Intro (Centered) -->
+        <div id="overlay-intro"
+          class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center w-full px-4 transition-transform duration-100 ease-out"
+          style="opacity: 1;">
+          <h2 class="text-4xl sm:text-6xl md:text-7xl font-display font-bold text-white mb-6">
+            Amrutha Kanakatte <br /><span
+              class="text-[#00d4ff] drop-shadow-[0_0_15px_rgba(0,212,255,0.5)]">Ravishankar</span>
+          </h2>
+          <p class="text-xl sm:text-2xl text-[#00d4ff] font-mono tracking-widest uppercase opacity-80">
+            AI & ML Engineer
+          </p>
+        </div>
 
-      <!-- Typewriter -->
-      <div class="flex items-center justify-center gap-1 text-lg sm:text-2xl font-semibold mb-6 h-9 sm:h-10"
-           data-aos="fade-up" data-aos-delay="250">
-        <span id="typewriter-text" class="text-[#00d4ff]"></span>
-        <span class="typewriter-cursor text-[#00d4ff]" aria-hidden="true">|</span>
-      </div>
+        <!-- 30-50%: Intelligent Systems (Left-aligned) -->
+        <div id="overlay-systems"
+          class="absolute top-1/2 left-[5%] md:left-[10%] -translate-y-1/2 max-w-xl px-4 transition-transform duration-100 ease-out"
+          style="opacity: 0; transform: translateY(50px);">
+          <h3 class="text-3xl sm:text-5xl md:text-6xl font-display font-bold text-white mb-6 leading-tight">
+            I build <span class="text-[#00d4ff]">intelligent systems.</span>
+          </h3>
+          <p
+            class="text-base sm:text-lg text-[#94a3b8] font-mono leading-relaxed max-w-md border-l-4 border-[#00d4ff] pl-4">
+            Specializing in LLM fine-tuning, computer vision, and production ML architecture that scale across cloud
+            infrastructure.
+          </p>
+        </div>
 
-      <!-- Bio -->
-      <p class="max-w-2xl mx-auto text-slate-400 text-sm sm:text-base leading-relaxed mb-10"
-         data-aos="fade-up" data-aos-delay="350">
-        Specializing in LLM fine-tuning, computer vision, and production ML systems.
-        Building scalable AI pipelines that bridge academic research with real-world clinical impact.
-      </p>
+        <!-- 60-80%: Bridging Research (Right-aligned) -->
+        <div id="overlay-bridging"
+          class="absolute top-1/2 right-[5%] md:right-[10%] -translate-y-1/2 text-right max-w-xl px-4 transition-transform duration-100 ease-out"
+          style="opacity: 0; transform: translateY(50px);">
+          <h3 class="text-3xl sm:text-5xl md:text-6xl font-display font-bold text-white mb-6 leading-tight">
+            Bridging <span class="text-[#a855f7]">research</span><br />and engineering.
+          </h3>
+          <p
+            class="text-base sm:text-lg text-[#94a3b8] font-mono leading-relaxed ml-auto max-w-md border-r-4 border-[#a855f7] pr-4">
+            Deploying end-to-end multi-agent RAG pipelines and optimizing transformers to solve critical clinical and
+            business challenges.
+          </p>
+        </div>
 
-      <!-- CTA -->
-      <div class="flex flex-col sm:flex-row items-center justify-center gap-3 mb-14"
-           data-aos="fade-up" data-aos-delay="450">
-        <a href="#projects"
-           class="btn-primary w-full sm:w-auto px-8 py-3.5 text-sm text-white font-semibold">
-          View My Work
-        </a>
-        <a href="#contact"
-           class="btn-outline w-full sm:w-auto px-8 py-3.5 text-sm font-semibold">
-          Contact Me
-        </a>
-      </div>
-
-      <!-- Social icons -->
-      <div class="flex items-center justify-center gap-5" data-aos="fade-up" data-aos-delay="550">
-        <a href="https://linkedin.com/in/amrutha-kanakatte-ravishankar-/" target="_blank" rel="noopener noreferrer"
-           aria-label="LinkedIn profile"
-           class="text-slate-500 hover:text-[#00d4ff] transition-colors text-xl hover:scale-110 duration-200">
-          <i class="fab fa-linkedin" aria-hidden="true"></i>
-        </a>
-        <a href="https://github.com/harithsya24" target="_blank" rel="noopener noreferrer"
-           aria-label="GitHub profile"
-           class="text-slate-500 hover:text-[#00d4ff] transition-colors text-xl hover:scale-110 duration-200">
-          <i class="fab fa-github" aria-hidden="true"></i>
-        </a>
-        <a href="mailto:amruthakravishankar@outlook.com"
-           aria-label="Send email"
-           class="text-slate-500 hover:text-[#00d4ff] transition-colors text-xl hover:scale-110 duration-200">
-          <i class="fas fa-envelope" aria-hidden="true"></i>
-        </a>
       </div>
     </div>
-
-    <!-- Scroll indicator -->
-    <a href="#about" aria-label="Scroll to About"
-       class="absolute bottom-10 left-1/2 -translate-x-1/2 z-10 text-slate-600 hover:text-[#00d4ff] transition-colors animate-bounce">
-      <i class="fas fa-chevron-down text-lg" aria-hidden="true"></i>
-    </a>
   </section>
-
 
   <!-- ===================================================
        ABOUT
   =================================================== -->
-  <section id="about" class="py-20 sm:py-28" aria-label="About">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <section id="about" class="py-24 sm:py-32 bg-[#050a14]" aria-label="About">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center flex flex-col items-center">
 
-      <div class="text-center mb-16" data-aos="fade-up">
-        <h2 class="section-title">About Me</h2>
-        <div class="section-line"></div>
+      <!-- Label -->
+      <div class="font-mono text-[#00d4ff] text-sm tracking-widest mb-6" data-aos="fade-up">
+        // ABOUT ME
       </div>
 
-      <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+      <!-- Heading -->
+      <h2 class="font-display leading-tight text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-10"
+        data-aos="fade-up" data-aos-delay="100">
+        I build things that <span class="text-[#00d4ff]">think.</span>
+      </h2>
 
-        <!-- Bio + Certifications -->
-        <div data-aos="fade-right">
-          <p class="text-slate-300 text-base sm:text-lg leading-relaxed mb-5">
-            AI Engineer specializing in LLM fine-tuning, computer vision, and production ML systems.
-            Expertise building scalable AI pipelines, optimizing model performance, and deploying
-            end-to-end solutions across cloud infrastructure.
-          </p>
-          <p class="text-slate-400 text-base leading-relaxed mb-8">
-            Published researcher bridging academic innovation with real-world clinical applications.
-            Currently completing my MS in Computer Science at Stevens Institute of Technology,
-            where I serve as a Graduate Peer Mentor and Provost Scholar.
-          </p>
+      <!-- Bio -->
+      <div class="max-w-[720px] w-full text-[#8b949e] text-base sm:text-lg leading-relaxed mb-16 space-y-6"
+        data-aos="fade-up" data-aos-delay="200">
+        <p>
+          AI Engineer specializing in LLM fine-tuning, computer vision, and production ML systems.
+          Expertise building scalable AI pipelines, optimizing model performance, and deploying
+          end-to-end solutions across cloud infrastructure.
+        </p>
 
-          <h3 class="text-[10px] font-semibold text-slate-500 uppercase tracking-[0.2em] mb-3">Certifications</h3>
-          <div id="certifications-list" class="space-y-2.5"></div>
-        </div>
-
-        <!-- Stats + Education -->
-        <div data-aos="fade-left">
-          <div class="grid grid-cols-2 gap-3 sm:gap-4 mb-6">
-            <div class="glass-card rounded-2xl p-5 text-center">
-              <div class="font-display text-3xl font-bold text-[#00d4ff] mb-1">3.88</div>
-              <div class="text-xs text-slate-500 font-medium">GPA / 4.0</div>
+        <!-- Education Sub-section -->
+        <div class="education-block mt-12 text-left w-full">
+          <div class="font-mono text-[0.65rem] text-[#00d4ff] tracking-[0.2em] uppercase mb-6 opacity-60 text-center">//
+            EDUCATION</div>
+          <div class="edu-card glass-card p-6 border border-white/5 rounded-2xl relative overflow-hidden group">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-[#00d4ff]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
             </div>
-            <div class="glass-card rounded-2xl p-5 text-center">
-              <div class="font-display text-3xl font-bold text-[#00d4ff] mb-1">6</div>
-              <div class="text-xs text-slate-500 font-medium">Publications</div>
+            <div class="flex flex-col sm:flex-row justify-between items-start gap-4 relative z-10">
+              <div>
+                <h4 class="text-white font-bold text-xl mb-1 flex items-center gap-2">
+                  MS in Computer Science
+                  <span
+                    class="text-[0.65rem] font-mono font-medium py-1 px-2 border border-[#00d4ff]/30 rounded text-[#00d4ff]">Graduated</span>
+                </h4>
+                <p class="text-[#00d4ff] font-medium">Stevens Institute of Technology</p>
+              </div>
+              <div class="text-right sm:text-right w-full sm:w-auto">
+                <span class="font-mono text-sm text-[#94a3b8]">Dec 2025</span>
+              </div>
             </div>
-            <div class="glass-card rounded-2xl p-5 text-center">
-              <div class="font-display text-2xl font-bold text-[#00d4ff] mb-1">AWS</div>
-              <div class="text-xs text-slate-500 font-medium">Certified</div>
+            <div class="mt-6 grid sm:grid-cols-2 gap-4 relative z-10">
+              <div class="flex items-center gap-3 text-sm text-[#94a3b8]">
+                <div class="w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center text-[#00d4ff]">
+                  <i class="fas fa-award"></i>
+                </div>
+                <span>Provost Scholar</span>
+              </div>
+              <div class="flex items-center gap-3 text-sm text-[#94a3b8]">
+                <div class="w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center text-[#a855f7]">
+                  <i class="fas fa-user-graduate"></i>
+                </div>
+                <span>Graduate Peer Mentor</span>
+              </div>
             </div>
           </div>
-
-          <h3 class="text-[10px] font-semibold text-slate-500 uppercase tracking-[0.2em] mb-3">Education</h3>
-          <div id="education-list" class="space-y-3"></div>
         </div>
 
+        <p class="text-center pt-8">
+          Published researcher bridging academic innovation with real-world clinical applications.
+        </p>
       </div>
+
+      <!-- Stats Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-5 sm:gap-6 w-full max-w-3xl mb-14" data-aos="fade-up"
+        data-aos-delay="300">
+        <!-- Stat 1 -->
+        <div class="about-stat-card">
+          <div class="text-4xl font-display font-bold text-[#00d4ff] mb-2 glow-text">1+ Years</div>
+          <div class="text-xs text-[#8b949e] tracking-[0.15em] uppercase font-semibold mt-1">Experience</div>
+        </div>
+        <!-- Stat 2 -->
+        <div class="about-stat-card">
+          <div class="text-4xl font-display font-bold text-[#00d4ff] mb-2 glow-text">10+ Projects</div>
+          <div class="text-xs text-[#8b949e] tracking-[0.15em] uppercase font-semibold mt-1">Built</div>
+        </div>
+        <!-- Stat 3 -->
+        <div class="about-stat-card">
+          <div class="text-4xl font-display font-bold text-[#00d4ff] mb-2 glow-text">6 Papers</div>
+          <div class="text-xs text-[#8b949e] tracking-[0.15em] uppercase font-semibold mt-1">Published</div>
+        </div>
+      </div>
+
+      <!-- Resume Button -->
+      <div class="pt-4" data-aos="fade-up" data-aos-delay="400">
+        <a href="./resume.pdf" download
+          class="btn-primary inline-flex items-center justify-center gap-2 px-10 py-4 text-sm font-semibold uppercase tracking-wider">
+          <i class="fas fa-download mt-[-2px]" aria-hidden="true"></i> Download Resume
+        </a>
+      </div>
+
     </div>
   </section>
 
@@ -297,79 +354,248 @@
 
 
   <!-- ===================================================
-       EXPERIENCE
+       EXPERIENCE — Horizontal scroll + canvas scrub
   =================================================== -->
-  <section id="experience" class="py-20 sm:py-28" aria-label="Work Experience">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-12" data-aos="fade-up">
-        <h2 class="section-title">Experience</h2>
-        <div class="section-line"></div>
-      </div>
-    </div>
+  <section id="experience" style="height: 500vh; position: relative;" aria-label="Work Experience">
 
-    <div class="exp-scroll-outer" data-aos="fade-up" data-aos-delay="100">
-      <button class="exp-nav-btn exp-nav-prev opacity-0 pointer-events-none" id="exp-prev" aria-label="Previous">
-        <i class="fas fa-chevron-left text-sm"></i>
-      </button>
-      <button class="exp-nav-btn exp-nav-next" id="exp-next" aria-label="Next">
-        <i class="fas fa-chevron-right text-sm"></i>
-      </button>
-      <div class="exp-scroll-wrapper" id="exp-scroll">
-        <div class="exp-timeline-track" id="experience-timeline">
-          <div class="exp-center-line" aria-hidden="true"></div>
-          <!-- Chapter cards injected by JS -->
+    <div id="exp-sticky" style="position: sticky; top: 0; height: 100vh; overflow: hidden;">
+
+      <!-- Background canvas -->
+      <canvas id="exp-canvas" style="position: absolute; inset: 0; width: 100%; height: 100%; z-index: 0;"></canvas>
+
+      <!-- Dark overlay -->
+      <div style="position: absolute; inset: 0; background: rgba(5,10,20,0.62); z-index: 1; pointer-events: none;">
+      </div>
+
+      <!-- Sliding track — 4 panels × 100vw -->
+      <div id="exp-track"
+        style="position: absolute; top: 0; left: 0; display: flex; width: 500vw; height: 100%; z-index: 10; will-change: transform; transition: transform 0.05s linear;">
+
+        <!-- ── Panel 1 — WalletGyde ──────────────────────────── -->
+        <div class="exp-panel">
+          <span class="exp-panel-num">// 01</span>
+          <div class="exp-panel-content">
+            <p class="exp-company">WalletGyde Inc.</p>
+            <h2 class="exp-role">Artificial Intelligence <span class="gradient-text">Researcher</span></h2>
+            <p class="exp-date"><i class="far fa-calendar-alt mr-2"></i>January 2025 – Present &nbsp;·&nbsp; <i
+                class="fas fa-location-dot mx-2"></i>Remote</p>
+            <ul class="exp-bullets">
+              <li>Spearheaded alpha testing for the WalletGyde chatbot, establishing rigorous benchmarks for reasoning
+                depth, grounded accuracy, and tool-calling reliability.</li>
+              <li>Architected feedback loops to drive improvements in RAG and system logic, reducing failure modes by
+                identifying complex edge cases.</li>
+              <li>Orchestrated collaboration between Engineering and Data teams to align model behavior with financial
+                compliance standards.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- ── Panel 2 — Mount Sinai ─────────────────────────── -->
+        <div class="exp-panel">
+          <span class="exp-panel-num">// 02</span>
+          <div class="exp-panel-content">
+            <p class="exp-company">Mount Sinai Health System</p>
+            <h2 class="exp-role">Volunteer AI <span class="gradient-text">Researcher</span></h2>
+            <p class="exp-date"><i class="far fa-calendar-alt mr-2"></i>November 2025 – Present &nbsp;·&nbsp; <i
+                class="fas fa-location-dot mx-2"></i>New York, NY</p>
+            <ul class="exp-bullets">
+              <li>Built end-to-end NLP system fine-tuning transformer models (T5, BART, GPT-2) for code generation with
+                custom PyTorch training pipelines.</li>
+              <li>Engineered RAG architecture with vector embeddings and semantic search, achieving 23% accuracy
+                improvement.</li>
+              <li>Curating multi-modal datasets combining natural language, hardware configs, and sensor data for
+                vision-language models.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- ── Panel 3 — Stevens Institute ───────────────────── -->
+        <div class="exp-panel">
+          <span class="exp-panel-num">// 03</span>
+          <div class="exp-panel-content">
+            <p class="exp-company">Stevens Institute of Technology</p>
+            <h2 class="exp-role">Graduate Research <span class="gradient-text">Assistant</span></h2>
+            <p class="exp-date"><i class="far fa-calendar-alt mr-2"></i>March 2025 – December 2025 &nbsp;·&nbsp; <i
+                class="fas fa-location-dot mx-2"></i>Hoboken, NJ</p>
+            <ul class="exp-bullets">
+              <li>Benchmarked GPT-4, Qwen3, GLM-4.5, Grok-2 on 12,000+ clinical queries using the MedESQ evaluation
+                framework.</li>
+              <li>Achieved 114% accuracy improvement (35% → 75%) via ReAct prompting and structured reasoning chain
+                optimization.</li>
+              <li>Developed evaluation methodologies for robust AI architectures in healthcare NoSQL systems.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- ── Panel 4 — PONS Tech ───────────────────────────── -->
+        <div class="exp-panel">
+          <span class="exp-panel-num">// 04</span>
+          <div class="exp-panel-content">
+            <p class="exp-company">PONS Tech</p>
+            <h2 class="exp-role">AI Research Engineer <span class="gradient-text">Intern</span></h2>
+            <p class="exp-date"><i class="far fa-calendar-alt mr-2"></i>June 2025 – October 2025 &nbsp;·&nbsp; <i
+                class="fas fa-location-dot mx-2"></i>Newark, NJ</p>
+            <ul class="exp-bullets">
+              <li>Deployed production Pix2Pix GAN pipeline processing 28,000+ medical images achieving 18% SSIM
+                improvement.</li>
+              <li>Architected hybrid GAN with SPADE for organ segmentation achieving 92% Dice coefficient on breast CT
+                scans.</li>
+              <li>Reduced inference time 40% through TensorRT optimization and model compression.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- ── Panel 5 — FutureWave ───────────────────────────── -->
+        <div class="exp-panel">
+          <span class="exp-panel-num">// 05</span>
+          <div class="exp-panel-content">
+            <p class="exp-company">FutureWave</p>
+            <h2 class="exp-role">Software Engineer <span class="gradient-text">Intern</span></h2>
+            <p class="exp-date"><i class="far fa-calendar-alt mr-2"></i>August 2021 – May 2022 &nbsp;·&nbsp; <i
+                class="fas fa-location-dot mx-2"></i>Mysuru, India</p>
+            <ul class="exp-bullets">
+              <li>Built automated ML deployment pipelines serving 50,000+ users with Docker, Kubernetes, Terraform — 98%
+                uptime.</li>
+              <li>Reduced p99 latency 35% (450ms → 180ms) via model quantization, caching, and horizontal scaling on
+                AWS.</li>
+              <li>Implemented blue-green deployment strategies for zero-downtime releases.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div><!-- end #exp-track -->
+
+      <!-- ── Progress pips ─────────────────────────────────────── -->
+      <div
+        style="position: absolute; bottom: 2.5rem; left: 50%; transform: translateX(-50%); z-index: 20; display: flex; gap: 0.65rem; align-items: center;">
+        <div class="exp-pip active"></div>
+        <div class="exp-pip"></div>
+        <div class="exp-pip"></div>
+        <div class="exp-pip"></div>
+        <div class="exp-pip"></div>
+      </div>
+
+      <!-- ── Arrow hints ────────────────────────────────────────── -->
+      <div id="exp-hint-left"
+        style="position: absolute; left: 2rem; top: 50%; transform: translateY(-50%); z-index: 20; color: #00d4ff; font-size: 1.5rem; opacity: 0; transition: opacity 0.3s; pointer-events: none;">
+        <i class="fas fa-chevron-left"></i>
+      </div>
+      <div id="exp-hint-right"
+        style="position: absolute; right: 2rem; top: 50%; transform: translateY(-50%); z-index: 20; color: #00d4ff; font-size: 1.5rem; opacity: 0.6; transition: opacity 0.3s; pointer-events: none;">
+        <i class="fas fa-chevron-right"></i>
+      </div>
+
+    </div><!-- end #exp-sticky -->
+  </section>
+
+
+  <!-- ===================================================
+       PUBLICATIONS — Research Journal UI
+  =================================================== -->
+  <section id="publications" class="pub-section" aria-label="Publications">
+    <div class="pub-container">
+
+      <!-- ── Section header ───────────────────────────────── -->
+      <div class="pub-section-header">
+        <div class="pub-header-left">
+          <span class="pub-header-label">// RESEARCH</span>
+          <h2 class="pub-header-title">Published Work</h2>
+        </div>
+        <div class="pub-filter-pills">
+          <button class="pub-filter-pill active" data-filter="all">All</button>
+          <button class="pub-filter-pill" data-filter="published">Published</button>
+          <button class="pub-filter-pill review" data-filter="review">Under Review</button>
         </div>
       </div>
-    </div>
+      <div class="pub-rule"></div>
 
-    <p class="exp-scroll-hint" id="exp-scroll-hint" data-aos="fade-up" data-aos-delay="200">
-      scroll to explore <i class="fas fa-arrow-right ml-1.5 text-xs"></i>
-    </p>
+      <!-- ── Two-column layout ────────────────────────────── -->
+      <div class="pub-layout">
+
+        <!-- Left: cards -->
+        <div class="pub-cards-col">
+          <div id="pub-cards-list"></div>
+        </div>
+
+        <!-- Right: sticky sidebar -->
+        <aside class="pub-sidebar-col">
+          <div class="pub-sidebar" id="pub-sidebar">
+            <h3 class="pub-sidebar-title">// Research Impact</h3>
+
+            <div class="pub-stats-grid">
+              <div class="pub-stat">
+                <div class="pub-stat-num" id="pub-stat-total">0</div>
+                <div class="pub-stat-label">Total Papers</div>
+              </div>
+              <div class="pub-stat">
+                <div class="pub-stat-num cyan" id="pub-stat-published">0</div>
+                <div class="pub-stat-label">Published</div>
+              </div>
+              <div class="pub-stat">
+                <div class="pub-stat-num violet" id="pub-stat-review">0</div>
+                <div class="pub-stat-label">Under Review</div>
+              </div>
+            </div>
+
+            <!-- Arc chart -->
+            <div class="pub-arc-wrap">
+              <canvas id="pub-arc-canvas"></canvas>
+              <div class="pub-arc-legend">
+                <span class="pub-arc-dot cyan"></span>Published
+                <span class="pub-arc-dot violet ml-4"></span>Under Review
+              </div>
+            </div>
+
+            <!-- Research areas -->
+            <div class="pub-areas-section">
+              <p class="pub-areas-label">Research Areas</p>
+              <div id="pub-areas-tags" class="pub-areas-tags"></div>
+            </div>
+
+            <!-- External links -->
+            <div class="pub-sidebar-links">
+              <a href="https://scholar.google.com" target="_blank" rel="noopener" class="pub-sidebar-link">
+                <i class="fas fa-graduation-cap mr-2"></i>Google Scholar
+                <i class="fas fa-arrow-right ml-auto text-xs opacity-50"></i>
+              </a>
+              <a href="https://www.researchgate.net" target="_blank" rel="noopener" class="pub-sidebar-link violet">
+                <i class="fas fa-flask mr-2"></i>ResearchGate
+                <i class="fas fa-arrow-right ml-auto text-xs opacity-50"></i>
+              </a>
+            </div>
+          </div>
+        </aside>
+
+      </div><!-- end .pub-layout -->
+    </div><!-- end .pub-container -->
   </section>
 
 
   <!-- ===================================================
-       PROJECTS
+       PROJECTS — Apple-Style Full Screen Case Studies
   =================================================== -->
-  <section id="projects" class="py-20 sm:py-28" aria-label="Projects">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-
-      <div class="text-center mb-16" data-aos="fade-up">
-        <h2 class="section-title">Projects</h2>
-        <div class="section-line"></div>
+  <section id="projects" class="py-24 relative overflow-hidden bg-[#050a14]">
+    <div class="container mx-auto px-6 mb-12">
+      <div class="max-w-4xl text-left">
+        <span class="font-mono text-[0.7rem] text-[#00d4ff] tracking-[0.2em] uppercase block mb-3 opacity-80">//
+          PROJECTS</span>
+        <h2 class="text-4xl sm:text-5xl font-bold text-[#ffffff] font-syne tracking-tight">TOP PROJECTS</h2>
       </div>
-
-      <div id="project-filters" class="flex flex-wrap gap-2 justify-center mb-10"
-           data-aos="fade-up" role="group" aria-label="Filter projects by technology"></div>
-
-      <div id="projects-grid" class="grid md:grid-cols-2 xl:grid-cols-3 gap-5 sm:gap-6"></div>
-
     </div>
-  </section>
 
+    <!-- Horizontal Scroll Wrapper -->
+    <div class="proj-h-wrapper relative">
+      <!-- Left Fade Hint -->
+      <div class="proj-h-fade fade-left"></div>
 
-  <!-- ===================================================
-       PUBLICATIONS
-  =================================================== -->
-  <section id="publications" class="py-20 sm:py-28" aria-label="Publications">
-    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-
-      <div class="text-center mb-16" data-aos="fade-up">
-        <h2 class="section-title">Publications</h2>
-        <div class="section-line"></div>
+      <!-- Scroll Container -->
+      <div id="proj-h-container"
+        class="proj-h-container flex gap-8 px-6 md:px-[10%] cursor-grab active:cursor-grabbing overflow-x-auto">
+        <!-- Cards injected dynamically -->
       </div>
 
-      <div class="book-shelf-scene" data-aos="fade-up" data-aos-delay="100">
-        <div id="publications-list" class="book-shelf-row"></div>
-        <div class="shelf-bar" aria-hidden="true"></div>
-      </div>
-
-      <div class="shelf-legend" data-aos="fade-up" data-aos-delay="200">
-        <span class="legend-item cyan"><span class="legend-dot"></span>Published</span>
-        <span class="legend-item violet"><span class="legend-dot"></span>IEEE / Conference</span>
-        <span class="legend-item amber"><span class="legend-dot"></span>Under Review</span>
-      </div>
-
+      <!-- Right Fade Hint -->
+      <div class="proj-h-fade fade-right"></div>
     </div>
   </section>
 
@@ -426,58 +652,41 @@
               </div>
             </div>
 
-            <!-- Chat body -->
+            <!-- Chat body (Static Results) -->
             <div class="chat-body" id="chat-body">
               <div class="chat-date-sep">Today</div>
 
-              <div class="chat-msg them" data-delay="100">
-                <div class="bubble">Hey! I saw your portfolio 👀</div>
-                <span class="msg-time">10:24 AM</span>
+              <div class="chat-msg them">
+                <div class="bubble">Hi! Thanks for visiting my portfolio. How can I help you today?</div>
+                <span class="msg-time">10:00 AM</span>
               </div>
 
-              <div class="chat-msg me" data-delay="500">
-                <div class="bubble">Hi! Thanks for reaching out 😊</div>
-                <span class="msg-time">10:25 AM</span>
+              <div class="chat-msg me">
+                <div class="bubble">I'm interested in your AI Engineering experience.</div>
+                <span class="msg-time">10:05 AM</span>
               </div>
 
-              <div class="chat-msg them" data-delay="900">
-                <div class="bubble">Your RAG system project is impressive. Are you open to new opportunities?</div>
-                <span class="msg-time">10:26 AM</span>
+              <div class="chat-msg them">
+                <div class="bubble">That's great! I specialize in LLMs, RAG, and Computer Vision. You can find more
+                  details in my projects and publications.</div>
+                <span class="msg-time">10:07 AM</span>
               </div>
 
-              <div class="chat-msg me" data-delay="1300">
-                <div class="bubble">Absolutely! I'm currently exploring roles in AI Engineering and ML Research.</div>
-                <span class="msg-time">10:27 AM</span>
-              </div>
-
-              <div class="chat-msg them" data-delay="1700">
+              <div class="chat-msg me">
                 <div class="bubble">What's the best way to reach you?</div>
-                <span class="msg-time">10:29 AM</span>
+                <span class="msg-time">10:10 AM</span>
               </div>
 
-              <div class="chat-msg me" data-delay="2100">
-                <div class="bubble">Drop me an email or connect on LinkedIn — links below 👇</div>
-                <span class="msg-time">10:30 AM</span>
-                <span class="msg-read">Read ✓✓</span>
-              </div>
-
-              <!-- Typing indicator (shown during auto-reply) -->
-              <div class="typing-wrap" id="typing-indicator" style="display:none" aria-live="polite">
-                <div class="bubble typing-bubble">
-                  <span class="typing-dot"></span>
-                  <span class="typing-dot"></span>
-                  <span class="typing-dot"></span>
-                </div>
+              <div class="chat-msg them">
+                <div class="bubble">Feel free to reach out via email or LinkedIn below. I'd love to chat!</div>
+                <span class="msg-time">10:12 AM</span>
               </div>
             </div>
 
-            <!-- Input bar -->
-            <div class="chat-input-bar">
-              <input type="text" id="chat-input" class="chat-input-field"
-                     placeholder="Type a message..." autocomplete="off" maxlength="300" />
-              <button id="chat-send-btn" class="chat-send-btn" aria-label="Send message">
-                <i class="fas fa-arrow-up text-xs"></i>
-              </button>
+            <!-- Input bar removed for static results -->
+            <div class="chat-footer-static"
+              style="padding: 1rem; text-align: center; border-top: 1px solid rgba(255,255,255,0.06);">
+              <span class="text-xs text-slate-500 uppercase tracking-widest font-mono">End of Conversation</span>
             </div>
 
           </div><!-- /phone-screen -->
@@ -490,8 +699,8 @@
           <i class="fas fa-envelope flex-shrink-0"></i>
           <span class="truncate">amruthakravishankar@outlook.com</span>
         </a>
-        <a href="https://linkedin.com/in/amrutha-kanakatte-ravishankar-/"
-           target="_blank" rel="noopener noreferrer" class="contact-action-btn">
+        <a href="https://linkedin.com/in/amrutha-kanakatte-ravishankar-/" target="_blank" rel="noopener noreferrer"
+          class="contact-action-btn">
           <i class="fab fa-linkedin flex-shrink-0"></i>
           LinkedIn
           <i class="fas fa-arrow-up-right-from-square text-xs opacity-50 ml-0.5 flex-shrink-0"></i>
@@ -499,10 +708,8 @@
       </div>
 
       <!-- Hidden form for silent Formspree submission -->
-      <form id="contact-form"
-            action="https://formspree.io/f/YOUR_FORMSPREE_ID"
-            method="POST"
-            style="display:none" aria-hidden="true">
+      <form id="contact-form" action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST" style="display:none"
+        aria-hidden="true">
         <input type="hidden" name="message" id="hidden-message" />
       </form>
 
@@ -521,15 +728,15 @@
         </p>
         <div class="flex items-center gap-5">
           <a href="https://linkedin.com/in/amrutha-kanakatte-ravishankar-/" target="_blank" rel="noopener noreferrer"
-             aria-label="LinkedIn" class="text-slate-600 hover:text-[#00d4ff] transition-colors text-lg">
+            aria-label="LinkedIn" class="text-[#94a3b8] hover:text-[#00d4ff] transition-colors text-lg">
             <i class="fab fa-linkedin" aria-hidden="true"></i>
           </a>
-          <a href="https://github.com/harithsya24" target="_blank" rel="noopener noreferrer"
-             aria-label="GitHub" class="text-slate-600 hover:text-[#00d4ff] transition-colors text-lg">
+          <a href="https://github.com/harithsya24" target="_blank" rel="noopener noreferrer" aria-label="GitHub"
+            class="text-[#94a3b8] hover:text-[#00d4ff] transition-colors text-lg">
             <i class="fab fa-github" aria-hidden="true"></i>
           </a>
-          <a href="mailto:amruthakravishankar@outlook.com"
-             aria-label="Email" class="text-slate-600 hover:text-[#00d4ff] transition-colors text-lg">
+          <a href="mailto:amruthakravishankar@outlook.com" aria-label="Email"
+            class="text-[#94a3b8] hover:text-[#00d4ff] transition-colors text-lg">
             <i class="fas fa-envelope" aria-hidden="true"></i>
           </a>
         </div>
@@ -539,12 +746,80 @@
 
 
   <!-- ===================================================
+       CASE STUDY OVERLAY (Fullscreen)
+  =================================================== -->
+  <div id="case-study-overlay" aria-modal="true" role="dialog">
+    <!-- Top Bar -->
+    <div class="cs-top-bar">
+      <div class="cs-top-bar-loader"></div>
+      <div class="cs-header-info">
+        <span class="cs-num" id="cs-overlay-num">// 01</span>
+        <h2 class="cs-title" id="cs-overlay-title">Project Title</h2>
+      </div>
+      <button class="cs-close-btn" id="cs-close" aria-label="Close Case Study">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+
+    <!-- Content -->
+    <div class="cs-content-scroll">
+      <!-- Main Column -->
+      <div class="cs-main-body">
+        <div class="cs-section">
+          <span class="cs-section-label">Problem</span>
+          <p id="cs-problem">Problem description goes here...</p>
+        </div>
+        <div class="cs-section">
+          <span class="cs-section-label">Solution</span>
+          <p id="cs-solution">Solution description goes here...</p>
+        </div>
+        <div class="cs-section">
+          <span class="cs-section-label">Impact</span>
+          <p id="cs-impact">Impact description goes here...</p>
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <div class="cs-sidebar">
+        <div class="cs-meta-card">
+          <div class="cs-meta-row">
+            <span class="cs-meta-label">Year</span>
+            <span class="cs-meta-value" id="cs-meta-year">2024</span>
+          </div>
+          <div class="cs-meta-row">
+            <span class="cs-meta-label">Role</span>
+            <span class="cs-meta-value">Lead AI Engineer</span>
+          </div>
+          <div class="cs-meta-row">
+            <span class="cs-meta-label">Stack</span>
+            <span class="cs-meta-value" id="cs-meta-stack">Python, LLMs, RAG</span>
+          </div>
+          <div class="cs-meta-row">
+            <span class="cs-meta-label">Status</span>
+            <span class="cs-meta-value">Production</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Actions -->
+    <div class="cs-footer-actions">
+      <a href="#" id="cs-github-link" target="_blank" rel="noopener noreferrer" class="cs-btn cs-btn-github">
+        <i class="fab fa-github"></i> GitHub →
+      </a>
+      <a href="#" id="cs-demo-link" target="_blank" rel="noopener noreferrer" class="cs-btn cs-btn-demo">
+        <i class="fas fa-external-link-alt"></i> Live Demo →
+      </a>
+    </div>
+  </div>
+
+  <!-- ===================================================
        TOAST
   =================================================== -->
   <div id="toast" class="fixed bottom-6 right-6 pointer-events-none" role="status" aria-live="polite">
-    <div class="glass-card rounded-xl px-5 py-4 flex items-center gap-3 shadow-2xl min-w-[260px]">
-      <i id="toast-icon" class="fas fa-check-circle text-emerald-400 text-lg flex-shrink-0" aria-hidden="true"></i>
-      <span id="toast-message" class="text-sm font-medium text-slate-200"></span>
+    <div class="glass-card rounded-xl px-5 py-4 flex items-center gap-3 shadow-2xl min-w-[260px] border border-white/5">
+      <i id="toast-icon" class="fas fa-check-circle text-[#00d4ff] text-lg flex-shrink-0" aria-hidden="true"></i>
+      <span id="toast-message" class="text-sm font-medium text-[#f0f6fc]"></span>
     </div>
   </div>
 
@@ -553,7 +828,7 @@
        BACK TO TOP
   =================================================== -->
   <button id="back-to-top" aria-label="Back to top"
-          class="fixed bottom-6 left-6 w-10 h-10 btn-primary text-white rounded-xl flex items-center justify-center">
+    class="fixed bottom-6 left-6 w-10 h-10 btn-primary text-white rounded-xl flex items-center justify-center">
     <i class="fas fa-chevron-up text-sm" aria-hidden="true"></i>
   </button>
 
@@ -568,7 +843,15 @@
   <!-- Site data + logic -->
   <script src="./assets/js/config.js"></script>
   <script src="./assets/js/main.js"></script>
-  <!-- Neural network animation (runs after DOM + THREE are ready) -->
-  <script src="./assets/js/three-bg.js"></script>
+  <!-- Scrollytelling Sequence Scripts -->
+  <script src="./assets/js/scrolly-canvas.js"></script>
+  <script src="./assets/js/overlay.js"></script>
+  <!-- Experience Horizontal Scroll + Canvas Scrub -->
+  <script src="./assets/js/experience-scroll.js"></script>
+  <!-- Projects Apple-Style Case Studies -->
+  <script src="./assets/js/projects-horizontal.js"></script>
+  <!-- Publications Research Journal -->
+  <script src="./assets/js/publications-research.js"></script>
 </body>
+
 </html>
